@@ -1,0 +1,57 @@
+{
+  "financial analyst": {
+    "title": "Financial Analyst",
+    "impact_level": "High Transformation",
+    "description": "AI is rapidly changing financial analysis by automating data processing and trend identification, shifting the human role towards strategy and client relations.",
+    "required_skills": [
+      "AI Literacy",
+      "Data Science",
+      "Strategic Thinking",
+      "Ethical Reasoning"
+    ]
+  },
+  "marketing manager": {
+    "title": "Marketing Manager",
+    "impact_level": "Moderate Transformation",
+    "description": "AI-powered analytics platforms are augmenting marketing strategies. The role now requires combining data insights with creative and strategic campaigns.",
+    "required_skills": [
+      "Hybrid Collaboration",
+      "Creative Problem-Solving",
+      "Data Interpretation",
+      "AI Tool Proficiency"
+    ]
+  },
+  "graphic designer": {
+    "title": "Graphic Designer",
+    "impact_level": "Moderate Transformation",
+    "description": "Generative AI tools are becoming powerful assistants for creative work, changing workflows and requiring new skills in prompting and curation.",
+    "required_skills": [
+      "Creativity",
+      "AI Tool Proficiency",
+      "Prompting AI Systems",
+      "Art Direction"
+    ]
+  },
+  "nurse": {
+    "title": "Nurse",
+    "impact_level": "Minimal Transformation",
+    "description": "While AI assists in diagnostics and administration, the core nursing responsibilities of patient care heavily rely on complex human interaction and empathy.",
+    "required_skills": [
+      "Emotional Intelligence",
+      "Complex Human Interaction",
+      "Ethical Reasoning",
+      "Clinical Judgment"
+    ]
+  },
+  "software developer": {
+    "title": "Software Developer",
+    "impact_level": "High Transformation",
+    "description": "AI code assistants and automated testing are changing the development lifecycle, emphasizing the need for skills in system architecture and AI integration.",
+    "required_skills": [
+      "Programming",
+      "Understanding AI Capabilities",
+      "Human-AI Workflow Management",
+      "System Design"
+    ]
+  }
+}

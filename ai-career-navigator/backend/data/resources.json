@@ -1,0 +1,143 @@
+{
+  "AI Literacy": [
+    {
+      "title": "AI for Everyone",
+      "type": "Course",
+      "url": "https://www.coursera.org/learn/ai-for-everyone"
+    },
+    {
+      "title": "What is AI? A Non-Technical Guide",
+      "type": "Article",
+      "url": "https://example.com/ai-guide"
+    }
+  ],
+  "Data Science": [
+    {
+      "title": "Python for Data Analysis",
+      "type": "Book",
+      "url": "https://www.oreilly.com/library/view/python-for-data/9781098104023/"
+    },
+    {
+      "title": "Kaggle's Intro to Machine Learning",
+      "type": "Tutorial",
+      "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+    }
+  ],
+  "Strategic Thinking": [
+    {
+      "title": "Harvard Business Review on Strategy",
+      "type": "Article",
+      "url": "https://hbr.org/topic/strategy"
+    },
+    {
+      "title": "Good Strategy Bad Strategy",
+      "type": "Book",
+      "url": "https://example.com/good-strategy-bad-strategy"
+    }
+  ],
+  "Ethical Reasoning": [
+    {
+      "title": "Ethics in AI",
+      "type": "Course",
+      "url": "https://www.coursera.org/specializations/ethics-in-ai"
+    }
+  ],
+  "Hybrid Collaboration": [
+    {
+      "title": "Effective Human-AI Collaboration",
+      "type": "Guide",
+      "url": "https://example.com/human-ai-collaboration"
+    }
+  ],
+  "Creative Problem-Solving": [
+    {
+      "title": "Creative Thinking: Techniques and Tools for Success",
+      "type": "Course",
+      "url": "https://www.coursera.org/learn/creative-thinking-techniques-and-tools-for-success"
+    }
+  ],
+  "Data Interpretation": [
+    {
+      "title": "Data-driven Decision Making",
+      "type": "Course",
+      "url": "https://www.coursera.org/learn/data-driven-decision-making"
+    }
+  ],
+  "AI Tool Proficiency": [
+    {
+      "title": "Generative AI for Beginners",
+      "type": "Tutorial",
+      "url": "https://example.com/gen-ai-tutorial"
+    }
+  ],
+  "Creativity": [
+    {
+      "title": "Unlocking Your Creative Potential",
+      "type": "Article",
+      "url": "https://example.com/creativity-article"
+    }
+  ],
+  "Prompting AI Systems": [
+    {
+      "title": "Prompt Engineering Guide",
+      "type": "Guide",
+      "url": "https://www.promptingguide.ai/"
+    }
+  ],
+  "Art Direction": [
+    {
+      "title": "Fundamentals of Art Direction",
+      "type": "Book",
+      "url": "https://example.com/art-direction-book"
+    }
+  ],
+  "Emotional Intelligence": [
+    {
+      "title": "The Importance of Emotional Intelligence in Healthcare",
+      "type": "Article",
+      "url": "https://example.com/eq-in-healthcare"
+    }
+  ],
+  "Complex Human Interaction": [
+    {
+      "title": "Communication Skills for Patient-Centered Care",
+      "type": "Course",
+      "url": "https://example.com/communication-course"
+    }
+  ],
+  "Clinical Judgment": [
+    {
+      "title": "Developing Clinical Reasoning",
+      "type": "Guide",
+      "url": "https://example.com/clinical-reasoning"
+    }
+  ],
+  "Programming": [
+    {
+      "title": "Python for Everybody",
+      "type": "Course",
+      "url": "https://www.coursera.org/specializations/python-for-everybody"
+    }
+  ],
+  "Understanding AI Capabilities": [
+    {
+      "title": "What are Large Language Models (LLMs)?",
+      "type": "Article",
+      "url": "https://blogs.nvidia.com/blog/what-are-large-language-models/"
+    }
+  ],
+  "Human-AI Workflow Management": [
+    {
+      "title": "Integrating AI into Developer Workflows",
+      "type": "Webinar",
+      "url": "https://example.com/ai-workflow-webinar"
+    }
+  ],
+  "System Design": [
+    {
+      "title": "System Design Interview",
+      "type": "Book",
+      "url": "https://www.oreilly.com/library/view/system-design-interview/9781736049109/"
+    }
+  ]
+}
