@@ -51,34 +51,37 @@ def parse_book_from_readme(filepath: str) -> List[Dict[str, Any]]:
 
     return sections
 
-def save_to_json(data: List[Dict[str, Any]], filepath: str):
-    """
-    Saves the structured data to a JSON file.
-
-    Args:
-        data: The list of structured data dictionaries.
-        filepath: The path to the output JSON file.
-    """
-    output_dir = os.path.dirname(filepath)
-    if output_dir and not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
-    with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
 if __name__ == '__main__':
-    # Example usage:
-    # Assumes the script is run from the root of the repository
+    # This script now serves as the main ETL entrypoint for the book content.
+    # It parses the README and loads the content into the SQLite database.
+
+    # Since this script is in src/, we need to adjust the path to be relative
+    # to the repository root where this script is expected to be run from.
+    # (e.g., python -m ai_insight_generator.src.data_parser)
+    # For simplicity in direct execution `python ai_insight...`, we assume repo root is parent of parent.
+
+    # A better approach for pathing will be needed for production, but this works for dev.
+    from .database import get_db_connection, create_tables, insert_book_data
+
     readme_path = './README.md'
-    output_path = './ai_insight_generator/book_content.json'
 
     try:
+        print("Connecting to database and creating tables...")
+        conn = get_db_connection()
+        create_tables(conn)
+
         print("Parsing README.md...")
         book_data = parse_book_from_readme(readme_path)
-        print(f"Saving structured content to {output_path}...")
-        save_to_json(book_data, output_path)
-        print("Done.")
+
+        print("Inserting book data into database...")
+        insert_book_data(conn, book_data)
+
+        print("ETL process completed successfully.")
+
     except FileNotFoundError as e:
-        print(e)
+        print(f"Error: {e}. Make sure you are running this script from the repository root.")
     except Exception as e:
         print(f"An error occurred: {e}")
+    finally:
+        if 'conn' in locals() and conn:
+            conn.close()

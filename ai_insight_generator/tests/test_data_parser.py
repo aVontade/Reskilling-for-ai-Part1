@@ -1,14 +1,13 @@
 import pytest
 import os
 import sys
-import json
 
 # Add the project root to the Python path to solve import issues
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from src.data_parser import parse_book_from_readme, save_to_json
+from src.data_parser import parse_book_from_readme
 
 @pytest.fixture
 def sample_readme_file(tmp_path):
@@ -70,22 +69,3 @@ def test_parse_book_from_readme_file_not_found():
     """Tests that a FileNotFoundError is raised for a non-existent file."""
     with pytest.raises(FileNotFoundError):
         parse_book_from_readme("a/path/that/does/not/exist.md")
-
-def test_save_to_json(sample_readme_file, tmp_path):
-    """Tests that the data can be saved to a JSON file correctly."""
-    output_json_path = tmp_path / "output.json"
-
-    # Get the data from the parser
-    parsed_data = parse_book_from_readme(sample_readme_file)
-
-    # Save the data to JSON
-    save_to_json(parsed_data, str(output_json_path))
-
-    # Verify the file was created
-    assert os.path.exists(output_json_path)
-
-    # Verify the content of the file
-    with open(output_json_path, 'r', encoding='utf-8') as f:
-        saved_data = json.load(f)
-
-    assert saved_data == parsed_data, "The data saved to JSON should match the parsed data"
