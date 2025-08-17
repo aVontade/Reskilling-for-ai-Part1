@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: ai_insight_generator
+Version: 0.1.0
+Summary: A platform to transform the 'Reskilling for the AI Economy' book into a live, interactive experience.
+Author-email: Jules <jules@example.com>
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

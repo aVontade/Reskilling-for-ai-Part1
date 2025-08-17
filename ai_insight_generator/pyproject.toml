@@ -1,0 +1,11 @@
+[project]
+name = "ai_insight_generator"
+version = "0.1.0"
+description = "A platform to transform the 'Reskilling for the AI Economy' book into a live, interactive experience."
+authors = [{ name = "Jules", email = "jules@example.com" }]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
