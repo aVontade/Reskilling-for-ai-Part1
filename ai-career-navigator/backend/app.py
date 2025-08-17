@@ -1,12 +1,31 @@
 import json
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
 # Enable CORS for all routes, allowing frontend to communicate with backend
 CORS(app)
+
+# --- Serve Frontend ---
+# The following routes are added to serve the frontend static files.
+# The frontend_dir points to the 'frontend' directory, which is a sibling to the 'backend' directory.
+frontend_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'frontend')
+
+@app.route('/')
+def serve_index():
+    """Serves the index.html file from the frontend directory."""
+    return send_from_directory(frontend_dir, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static_files(path):
+    """Serves static files (e.g., CSS, JS) from the frontend directory."""
+    # This catch-all route will serve any file from the frontend directory.
+    # Flask is smart enough to prioritize more specific routes like '/api/analyze',
+    # so this won't interfere with the API.
+    return send_from_directory(frontend_dir, path)
+
 
 # --- Data Loading ---
 def load_data():
