@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsContainer.innerHTML = '<div class="loading">Analyzing your role...</div>';
 
         try {
-            const response = await fetch('http://localhost:5000/api/analyze', {
+            const response = await fetch('/api/analyze', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
