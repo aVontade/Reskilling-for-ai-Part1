@@ -1,8 +1,14 @@
+README.md
 pyproject.toml
+src/__init__.py
+src/create_embeddings.py
 src/data_parser.py
+src/database.py
 src/ai_insight_generator.egg-info/PKG-INFO
 src/ai_insight_generator.egg-info/SOURCES.txt
 src/ai_insight_generator.egg-info/dependency_links.txt
 src/ai_insight_generator.egg-info/requires.txt
 src/ai_insight_generator.egg-info/top_level.txt
+tests/test_create_embeddings.py
 tests/test_data_parser.py
+tests/test_database.py

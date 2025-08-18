@@ -4,5 +4,10 @@ Version: 0.1.0
 Summary: A platform to transform the 'Reskilling for the AI Economy' book into a live, interactive experience.
 Author-email: Jules <jules@example.com>
 Requires-Python: >=3.9
+Requires-Dist: pinecone-client<4.0.0,>=3.0.0
+Requires-Dist: sentence-transformers<3.0.0,>=2.2.0
+Requires-Dist: torch<3.0.0,>=2.0.0
+Requires-Dist: tqdm<5.0.0,>=4.62.0
 Provides-Extra: dev
 Requires-Dist: pytest; extra == "dev"
+Requires-Dist: numpy; extra == "dev"
